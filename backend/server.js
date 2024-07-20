@@ -1,15 +1,17 @@
-import path from "path";
-import express from "express";
-import dotenv from "dotenv";
-import cookieParser from "cookie-parser";
-import { v2 as cloudinary } from "cloudinary";
+import path from 'path';
+import express from 'express';
+import dotenv from 'dotenv';
+import cookieParser from 'cookie-parser';
+import { v2 as cloudinary } from 'cloudinary';
 
-import authRoutes from "./routes/auth.route.js";
-import userRoutes from "./routes/user.route.js";
-import postRoutes from "./routes/post.route.js";
-import notificationRoutes from "./routes/notification.route.js";
+// Import routes
+import authRoutes from './routes/auth.route.js';
+import userRoutes from './routes/user.route.js';
+import postRoutes from './routes/post.route.js';
+import notificationRoutes from './routes/notification.route.js';
 
-import connectMongoDB from "./db/connectMongoDB.js";
+// Import MongoDB connection function
+import connectMongoDB from './db/connectMongoDB.js';
 
 dotenv.config();
 
